@@ -6,7 +6,8 @@ n = 1000 # Número de pontos
 tx = 200 # Tamanho do eixo X
 w = 2.0 * np.pi/tx # frequência angular
 
-t = np.linspace(0, tx, n) # Base de tempo
+# Base de tempo
+t = np.linspace(0, tx, n)
 
 # Senoides
 s1 = 2.0 * np.cos(2.0 * w * t)
@@ -21,6 +22,7 @@ mask = freq > 0
 
 # TFD da soma dos senoides
 fft_calculation = np.fft.fft(s)
+
 # Retirando números negativos 
 fft_absolute = 2.0 * np.abs(fft_calculation/n)
 
