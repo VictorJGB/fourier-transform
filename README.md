@@ -55,7 +55,7 @@ An Fourier Transform example using Python and mathematical libraries
    ```
 2. Install the required libs
    ```sh
-   pip install -r .requirements.txt
+   pip install -r ./requirements.txt
    ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
